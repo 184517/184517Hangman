@@ -1,0 +1,18 @@
+﻿<Window x:Class="_184517Hangman.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_184517Hangman"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Canvas>
+        <Label x:Name="lblTitle" Content="HANGMAN" FontSize="20" Background="LightBlue" Canvas.Left="205" Width="113" Canvas.Top="3"></Label>
+        <TextBox x:Name="txtLetter" Canvas.Left="10" Canvas.Top="187" Height="122" Width="293">Enter Letter</TextBox>
+        <Button x:Name="btnGuess" Click="btnGuess_Click" Canvas.Left="317" Canvas.Top="187" Width="190" Height="122" Background="LightGreen">Guess</Button>
+        <Label x:Name="lblLettersGuessed" Canvas.Left="10" Canvas.Top="131" Width="293" Height="42" Background="Pink"></Label>
+        <TextBlock x:Name="txbCorrectLetters" Canvas.Left="10" Canvas.Top="89" Width="271" FontSize="18">Correct Letters</TextBlock>
+        <Label x:Name="lblLivesLeft" Canvas.Left="317" Canvas.Top="131" Width="190" Background="Pink">Lives Left:</Label>
+        <Button x:Name="btnStart" Click="btnStart_Click" Width="517" Height="27" Canvas.Top="45" Background="LightGreen">Start Game / Reset Game</Button>
+    </Canvas>
+</Window>
